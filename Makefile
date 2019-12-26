@@ -2,6 +2,7 @@
 # Copyright (c) 2019 Intel Corporation
 
 export GO111MODULE = on
+export GOPROXY = https://goproxy.cn
 
 .PHONY: build appliance eaa interfaceservice edgedns clean build-docker lint test help build-docker-hddl hddllog build-docker-fpga-cfg build-docker-fpga-opae
 TMP_DIR:=$(shell mktemp -d)
